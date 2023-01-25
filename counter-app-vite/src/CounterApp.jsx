@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { PropTypes } from "prop-types";
 
-export const CounterApp = ( { value } ) => {
+export const CounterApp = ( { value,mensajeFinal } ) => {
 	
 	const [ counter,setCounter ] = useState( value );
 	
@@ -23,10 +23,17 @@ export const CounterApp = ( { value } ) => {
             <button onClick={ handleReset }>
                 Reset
             </button>
+			<p>{ mensajeFinal }</p>
 		</>
 	)
 }
 
 CounterApp.propTypes = {
     value: PropTypes.number,
+	mensajeFinal: PropTypes.string
+}
+
+CounterApp.defaultProps = {
+	mensajeFinal: 'Silent is golden',
+	value: 133
 }
