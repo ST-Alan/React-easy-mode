@@ -69,5 +69,9 @@ devDependencies es solo para el modo desarrollo | Dependencies es para el modo p
 
 Ahora start va a ser nodemon index.js, ya no será node
 
+El comando para iniciar es:
+npm start
 ----------------------------------------------------------------------------------------------------------------------------------------
 Un navegador solo entra a rutas get, no a rutas post
+---------------------------------------------------------
+Todo lo que venga de params es un string
