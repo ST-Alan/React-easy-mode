@@ -24,7 +24,7 @@ describe('Pruebas en 05-funciones.js', () => {
         const user = getUsuarioActivo(name)
         expect(user).toStricEqual({
 					uid:'ABC567',
-					username: name
+					username: name 
 				})
     })
 
