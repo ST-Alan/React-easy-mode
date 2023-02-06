@@ -63,7 +63,7 @@ app.listen(6001,()=>console.log("El servidor inició en el puerto http://localho
 
  npm i nodemon -D
 
-nodemon -D es solo para desarrollo. En el modo producción está mal hecho, es solo para desarrollo. La i es de install
+nodemon -D es solo para desarrollo. En el modo producción está mal hecho, es solo para desarrollo. La i es de install 
 
 devDependencies es solo para el modo desarrollo | Dependencies es para el modo producción
 

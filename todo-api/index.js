@@ -55,4 +55,4 @@ app.put("/update/:id", (req,res)=>{
     })
 })
 
-app.listen(6001,()=>console.log("El servidor inició en el puerto http://localhost:6001"))
+app.listen(6001,()=>console.log("El servidor inició en el puerto http://localhost:6001")) 
