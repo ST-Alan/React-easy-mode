@@ -11,21 +11,23 @@ import PropTypes from 'prop-types'
 // }
 // El Fragment de arriba es igual al <></> de abajo y sin importar
 
-export const FirstApp = ({title,subTitle}) => {
+export const FirstApp = ({ title, subTitle, name }) => {
 	return (
 		<>
-			<h2>First App {title}</h2>
+			<h1>{title}</h1>
 			<p>IOS & Android version {subTitle}</p>
+			<p>{name}</p>
 		</>
 	)
 }
 
-FirstApp.propTypes={
-	title: PropTypes.string,
+FirstApp.propTypes = {
+	title: PropTypes.string.isRequired,
 	subTitle: PropTypes.number
 }
 
-FirstApp.defaultProps={
-	title: 'App Buyxpress Español',
-	subTitle: 'Version 0.0.1'
+FirstApp.defaultProps = {
+	// title: 'App Buyxpress Español',
+	subTitle: 33,
+	name: 'Alan Fermin'
 }
