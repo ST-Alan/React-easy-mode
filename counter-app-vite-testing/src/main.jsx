@@ -13,8 +13,8 @@ import './style.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
 		{/* <HelloWorldApp /> */}
-		{/* <FirstApp title='<Test Buyxpress>' subTitle={123}/> */}
+		<FirstApp title='Hola soy yo' />
 		{/* <SecondComponent /> */}
-		<CounterApp value={133}/>
+		{/* <CounterApp value={133}/> */}
 	</React.StrictMode>
 )
