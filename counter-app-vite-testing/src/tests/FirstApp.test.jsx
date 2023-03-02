@@ -4,7 +4,10 @@ describe('Pruebas en FirstApp', () => {
 
 	test('Debe de hacer match con el snapshot', () => {
 
-		render(<FirstApp />)
+		const title = 'Hola, Soy Goku'
+		const { container } = render(<FirstApp title={title} />)
+		console.log(container)
+		expect(container).toMatchSnapshot()
 
 
 	})
