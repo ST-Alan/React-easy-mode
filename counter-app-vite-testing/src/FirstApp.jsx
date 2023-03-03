@@ -14,8 +14,10 @@ import PropTypes from 'prop-types'
 export const FirstApp = ({ title, subTitle, name }) => {
 	return (
 		<>
-			<h1>{title}</h1>
-			<p>IOS & Android version {subTitle}</p>
+			<h1 data-testid="test-title"> {title} </h1>
+			{/* <p>IOS & Android version {subTitle}</p> */}
+			<p>{subTitle}</p>
+			<p>{subTitle}</p>
 			<p>{name}</p>
 		</>
 	)
@@ -23,11 +25,12 @@ export const FirstApp = ({ title, subTitle, name }) => {
 
 FirstApp.propTypes = {
 	title: PropTypes.string.isRequired,
-	subTitle: PropTypes.number
+	// subTitle: PropTypes.number
+	subTitle: PropTypes.string
 }
 
 FirstApp.defaultProps = {
 	// title: 'App Buyxpress Español',
-	subTitle: 33,
+	// subTitle: 33,
 	name: 'Alan Fermin'
 }
